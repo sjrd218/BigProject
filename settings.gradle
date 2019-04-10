@@ -1,0 +1,8 @@
+rootProject.name = 'BigProject'
+
+include 'core-project', 
+	'coolapp',
+	'coolapp:one-plugin'
+
+project(":coolapp").projectDir = file("cool-grails-app")
+project(":coolapp:one-plugin").projectDir = file("cool-grails-app/one-plugin")
